@@ -1,8 +1,8 @@
 #!/bin/bash
 # Mengembalikan Xiaomi MiTV-MZTU0 ke kondisi bawaan (launcher Google TV + aplikasi Xiaomi).
-# Jalankan: bash kembalikan-launcher-bawaan.sh [IP_TV]
+# Jalankan: bash kembalikan-launcher-bawaan.sh <IP_TV>
 # Update aplikasi yang dihapus akan dipasang lagi otomatis oleh Play Store / Xiaomi.
-TV="${1:-192.168.1.8}:5555"
+TV="${1:?Pakai: bash kembalikan-launcher-bawaan.sh <IP_TV>}:5555"
 
 adb connect "$TV"
 for p in \
