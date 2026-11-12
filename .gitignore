@@ -1,0 +1,9 @@
+# Hasil build
+build/
+
+# Kunci tanda tangan aplikasi: JANGAN di-commit
+*.keystore
+*.jks
+keystore.properties
+
+.DS_Store
